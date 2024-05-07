@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+    <style>
+        
+        h1 {
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            text-align: center;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            border: 1px solid;
+            text-align: center;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .box:hover{
+            box-shadow: 1px 1px 6px black, 0 0 20px green, 0 0 5px lightgreen;
+            transition: 0.4s ease-in-out;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1> With CSS you can create shadow effects!</h1>
+    <div class="box">
+        <h2>
+            Hover me
+        </h2>
+    </div>
+</body>
+</html>
