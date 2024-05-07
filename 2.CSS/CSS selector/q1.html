@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+
+    <!-- descendent selector (div ke andar jitne bhi li honge sbka color aqua ho jayega)-->
+    <style>
+        * {
+            color: aqua;
+            background-color: black;
+        }
+        /* universal selector ke baad hum kisi particular tag ko agar property dete h to vhi final mani jati h
+           jese yaha p-tag ka final color green ho jayega ab agar fir se universal selector de bhi de tb bhi p-tag ka color green hi rehne vala h  
+        */
+        p{
+            color: green;
+        }
+        div li {
+            color: aqua;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, magni.</p>
+    <ol>
+        <li>I</li>
+        <li>am</li>
+        <li>A</li>
+        <li>List</li>
+    </ol>
+
+    <!-- ol li are both descendent of div tag and div tag is predecesor  -->
+    <div>
+        <ol>
+            <li>Select</li>
+            <li>Me</li>
+        </ol>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- now lets learn about forms -->
+    <h2>Contact Us</h2>
+    <!-- In action we put link of backend where we want to store data -->
+    <form action="" method="post">
+    <!-- when someone enter their name it store in backend like this (username = name that we will give) -->
+    <!-- input are inline element -->
+        <!-- label is used to give label, In label (for contains id for what we are labeling it) -->
+        <div>
+            <label for="name">Name: </label>
+            <input required placeholder="Enter your name" type="text" name="username" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email: </label>
+            <input required placeholder="Enter your email" type="email" name="useremail" id="email">
+        </div>
+        <br>
+
+       <!-- we can also use input text for address but address may be long size so we use textarea -->
+    <div>
+        <label for="message">Message: </label>
+        <textarea placeholder="Enter your message" name="useradderss" id="message" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    
+    <div>
+        <label for="dob">Date Of Birth: </label>
+        <input type="date" name="DOB" id="dob">
+    </div>
+    <br>
+      <!-- for gender we have select tag -->
+    
+    <div>
+        <label for="gender">Gender: </label>
+        <!-- here value = "male" means when user select Male then this value(male) will be sent to database-->
+        <!-- if we want male is always comes as selected then put selected attribute in option of male -->
+        <select name="userGender" id="gender">
+          <option value="">Select gender</option>
+        <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+    </div>
+    <br>
+      <!-- lets add some checkboxes in our website  -->
+    <div>
+        <label for="frontend">Frontend: </label>
+        <input type="checkbox" name="skills" id="frontend">
+        <label for="backend">Backend: </label>
+        <input type="checkbox" name="skills" id="backend">
+    </div>
+    <br>
+
+    <fieldset>
+        <legend>Mode of payment</legend>
+        <label for="cash">Cash: </label>
+        <input type="radio" name="payment" id="cash">
+        
+        <label for="bank">Bank: </label>
+        <input type="radio" name="payment" id="bank">
+    </fieldset>
+        <br>
+    <!-- lets add password -->
+    <div>
+        <label for="password">Password: </label>
+        <input placeholder="Enter password" type="password" name="password" id="password">
+    </div>
+        <br>
+    <!-- lets add button -->
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+
+    </form>
+</body>
+</html>

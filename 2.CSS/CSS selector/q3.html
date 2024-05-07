@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class Selector</title>
+
+    <!-- class selector -->
+    <style>
+        .class1{
+            color: crimson;
+        }
+
+        /* accessing the element that has more than 1 classes but putting space in between is not allowed*/
+        .class.class2{
+            color: blue;
+        }
+        #para{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="class1">Random</p>
+    <p>Random</p>
+    <p>Random</p>
+    <p>Random</p>
+    <p class="class class2">Random</p>
+    <p>Random</p>
+    <p>Random</p>
+
+    <p class="class1" id="para">Make me red</p>
+    <p class="class1">Make me red</p>
+    <p class="class2">Make me blue</p>
+</body>
+</html>

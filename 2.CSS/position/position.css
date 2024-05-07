@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+.container{
+    border: 2px solid black;
+}
+.container > div{
+    height: 100px;
+    width: 100px;
+    color: white;
+}
+.first{
+    background-color:crimson;
+    /* Position relative means apni current position se left right top bottom me move karna */
+    position: relative; 
+    left: 200px;
+    /* here first box will move left from their current position */
+}
+.second{
+    background-color: black;
+    position: relative;
+    left: 100px;
+    color: white;
+}
+.third{
+    background-color: blue;
+    position: relative;
+    bottom: 100px;
+    /* here third box moves 100px up from its current position yaha ise bottom se 100px move karna h */
+}
+.container{
+    position: relative;
+}
+.four{
+    /* position absolute karne se box root element ke according position change karta h */
+    /* if we set position relative to parent element then set position of this div it will be positioned relative to parent */
+    background-color:chocolate;
+    /* The element is removed from the normal document flow, and no space is created for the element in the page layout. if we set position absolute */
+    position: absolute;
+    bottom: 0;
+    /* yaha fourth box bottom se 100px up move karega naa ki apni current position se */
+    left: 200px;
+}

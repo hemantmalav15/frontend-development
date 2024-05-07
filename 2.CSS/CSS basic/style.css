@@ -1,0 +1,31 @@
+p{
+    color:green;
+    background-color: black;
+
+    font-weight: 300; /* we can give font weight from (100 - 900)*/
+    /* text-align: center; =================most used property================ */
+    text-align: justify; /* It try to fill every line as possible as it can */
+    /* text-transform: uppercase; */
+    /* text-decoration:underline; */
+    /* line-height: 200px; */
+    /* word-spacing: 40px; */
+    /* text-shadow: 0 0 5px yellow; (x-value, y-value, how much shadow we want, color of shadow) */
+}
+body{
+    background-position: 10%;
+    background-color: rgb(14, 196, 196);
+    background-attachment:scroll;
+    background-image: url('');
+    background-repeat: no-repeat;
+}
+h1,p{
+    text-shadow: 10px 10px 5px green;
+    /* text-align: center; */
+    font-size: 2em;
+    /* 1em = 100%  and 2em yaa 200% means parent ka 2 times kar do 500% means parent ki size se 5times kar do*/
+    /* 2rem = means root(html) ki size ka 2 times */
+    /* font-size: 10vh; vh means screen ki height ka 10%
+    /* font-size: 10vw; vw means screen ki width ka 10% */
+    /* font-size: 10vmin (means viewport min -> height or width me jo bhi min h uska 10%) */
+    /* font-size: 10vmax (means viewport max -> height or width me jo bhi max h uska 10%) */
+}
