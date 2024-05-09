@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units in css</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        html,body{
+            height: 100%;
+        }
+        .parent{
+            height: 40%;
+            width: 80%;
+            border: 2px solid green;
+            background-color: aqua;
+            text-align: center;
+        }
+        .child{
+            height: 50%;
+            border: 2px solid red;
+        }
+        /* vh and vw units are relative to the viewport height and width not related to parent or child
+         .parent{
+            height: 50vh;
+            width: 50vw;
+            border: 2px solid green;
+            background-color: aqua;
+            text-align: center;
+        }
+        .child{
+            width: 50vw;
+            height: 25vh;
+            border: 2px solid red;
+        } */
+    </style>
+</head>
+<body>
+    <h1>CSS Units</h1>
+    <div class="parent">
+        <div class="child">
+            child
+        </div>
+    </div>
+</body>
+</html>
