@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .container{
+            height: 100vh;
+            background-color: lightblue;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            animation: godown 2s ease-in-out 2s 3;
+            animation-direction: alternate;
+        }
+        @keyframes godown {
+            from{
+                transform: translate(0);
+            }
+            to{
+                transform: translate(500px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>
