@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <!-- transitions -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 500px;
+            background-color: lightblue;
+            padding: 30px;
+        }
+        /* we want to apply transition on box */
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            transition: transform 2s ease-out;
+        }
+        .box:hover{
+            transform: translate(400px) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            i am box
+        </div>
+    </div>
+</body>
+</html>
