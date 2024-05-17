@@ -11,6 +11,7 @@
         .container{
             height: 100vh;
             background-color: lightblue;
+            position: relative;
         }
         .box{
             height: 100px;
@@ -18,13 +19,17 @@
             background-color: white;
             animation: godown 2s ease-in-out 2s 3;
             animation-direction: alternate;
+            position: absolute;
+            top: 0;
+            right: 300px;
+            border-radius: 50%;
         }
         @keyframes godown {
             from{
-                transform: translate(0);
+                transform: translateY(0);
             }
             to{
-                transform: translate(500px);
+                transform: translateY(500px);
             }
         }
     </style>
