@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling and Forms</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            margin: 20px;
+            width: 400px;
+            height: 400px;
+            background-color: green;
+        }
+
+        .child {
+            height: 300px;
+            width: 300px;
+            margin: 20px;
+            background-color: red;
+        }
+
+        .subchild {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            margin: 20px;
+        }
+    </style>
+    <!-- even if we put script in head it works fine becoz we are using DOMContentLoaded event and The DOMContentLoaded event fires when the HTML document has been completely parsed  -->
+    <!-- <script src="Event-handling.js"></script> -->
+    <script src="form.js"></script>
+</head>
+
+<body>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <form name="login" action="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter Your Name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email">
+
+        <!-- submit button -->
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class="box parent">
+        parent
+        <div id="child" class="box child">
+            child
+            <div id="subchild" class="box subchild">Subchild</div>
+        </div>
+    </div>
+</body>
+
+</html>
