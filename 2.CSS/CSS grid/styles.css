@@ -5,13 +5,34 @@
 .container {
   height: 600px;
   width: 900px;
+  margin: 0 auto;
   border: 2px solid red;
   display: grid;
-  grid-template-columns: repeat(2, 1fr) repeat(3, 3fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 40px 1fr 1fr 40px;
+
 }
 .box {
-  background-color: green;
-  border: 2px solid black;
-  /* height: 100px;
-  width: 100px; */
+  background-color: lightgreen;
+}
+#box1{
+  background-color: lightcoral;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+#box2{
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: lightblue;
+}
+#box3{
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: lightyellow;
+}
+#box4{
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
