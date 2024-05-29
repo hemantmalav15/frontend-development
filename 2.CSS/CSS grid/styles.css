@@ -3,17 +3,16 @@
   padding: 0;
 }
 .container {
-  height: 600px;
+  height: 400px;
   width: 900px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 40px 1fr 1fr 40px;
   gap: 10px;
-
 }
 .box {
-  background-color: lightgreen;
+  background-color: lightblue;
   border-radius: 6px;
 }
 #box1{
@@ -28,12 +27,22 @@
 }
 #box3{
   grid-column-start: 2;
-  grid-column-end: 5;
+  grid-column-end: 3;
   grid-row-start: 2;
-  grid-row-end: 4;
+  grid-row-end: 3;
   background-color: lightblue;
 }
 #box4{
+  /* shorthand property for grid-row-start, grid-col-start, grid-row-end, grid-col-end */
+  grid-area: 2/3/3/4;
+}
+#box5{
+  grid-area: 3/2/4/3;
+}
+#box6{
+  grid-area: 3/3/4/4;
+}
+#box7{
   grid-column-start: 1;
   grid-column-end: 5;
   background-color: green;
